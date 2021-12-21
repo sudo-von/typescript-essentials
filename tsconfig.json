@@ -1,0 +1,11 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist",
+        "baseUrl": "src",
+        "sourceMap": true,
+        "moduleResolution": "node",
+        "noEmitOnError": true,
+        "target": "ES5",
+        "watch": true
+    }
+}
