@@ -12,7 +12,17 @@ class Rectangle implements Comparator<Rectangle>{
     }
 }
 
-let first_rectangle:Rectangle = new Rectangle(2,5);
-let second_rectangle:Rectangle = new Rectangle(2,3);
+class Programmer implements Comparator<Programmer>{
+    constructor(public name:string, public salary:number){};
+    compareTo(value: Programmer): number {
+        if(this.salary >= value.salary){
+            return 1;
+        }
+        return -1;
+    }
+}
 
-first_rectangle.compareTo(second_rectangle) === 1 ? console.log("First rectangle is bigger") : console.log("Second rectangle is smaller");
+let first_programmer:Programmer = new Programmer("Sudo",10000);
+let second_programmer:Programmer = new Programmer("VoN",2000);
+
+first_programmer.compareTo(second_programmer) === 1 ? console.log(`${first_programmer.name} is richer`) : console.log(`${second_programmer.name} is poorer`);
