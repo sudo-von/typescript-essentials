@@ -5,9 +5,9 @@ var padLeft = function (value, padding) {
     if (typeof padding === 'string') {
         return padding + value;
     }
-    throw new Error("Expected string or number, got '".concat(padding, "'."));
+    // throw new Error(`Expected string or number, got '${padding}'.`)
 };
 console.log(padLeft('Hello world', 4));
 console.log(padLeft('Hello world', 'Yakov says '));
-console.log(padLeft('Hello world', true));
+// console.log(padLeft('Hello world', true));
 //# sourceMappingURL=09-union-type.js.map
