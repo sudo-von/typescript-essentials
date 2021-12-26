@@ -6,6 +6,10 @@
         "moduleResolution": "node",
         "noEmitOnError": true,
         "target": "ES5",
-        "watch": true
+        "watch": true,
+        "lib": [ 
+            "es2018",
+            "dom"
+        ]
     }
 }
