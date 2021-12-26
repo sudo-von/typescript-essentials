@@ -1,7 +1,7 @@
 (function name() {
     if (true) {
-        var customer = "Mary";
-        console.log("[let] The name of the customer inside the block is " + customer);
+        var customer_1 = "Mary";
+        console.log("[let] The name of the customer inside the block is " + customer_1);
     }
     else {
         /*
